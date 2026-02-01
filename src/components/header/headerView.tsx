@@ -37,17 +37,17 @@ export const HeaderView = () => {
           <HeaderDescription />
         </Flex>
       </Flex>
-      <Flex pos="relative" flex={0.7} style={{ overflow: "hidden" }}>
+      <Flex w={500} pos="relative" flex={0.7} style={{ overflow: "hidden" }}>
         <motion.div
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          transition={{ delay: 1, duration: 0.5 }}
           style={{ overflow: "hidden" }}
         >
           <motion.div
             initial={{ height: 40 }}
             animate={{ height: 310 }}
-            transition={{ delay: 1, duration: 0.3 }}
+            transition={{ delay: 1.5, duration: 0.3 }}
           >
             <CardCodeHighLighter code={code} />
           </motion.div>
