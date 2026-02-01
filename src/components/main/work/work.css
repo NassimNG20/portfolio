@@ -1,0 +1,27 @@
+/*
+//
+//
+//
+//
+//
+//
+//
+//
+*/
+.work_hover_left_card {
+  width: 50%;
+  transition: all 0.5s;
+  /* border: 1px solid var(--border_color); */
+}
+.work_hover_left_card:hover {
+  width: 90%;
+}
+
+.work_hover_right_card {
+  width: 50%;
+  transition: all 0.5s;
+  /* border: 1px solid var(--border_color); */
+}
+.work_hover_right_card:hover {
+  width: 90%;
+}

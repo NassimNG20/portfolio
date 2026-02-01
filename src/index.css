@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/Inter/Inter-VariableFont_opsz\,wght.ttf") format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "JB";
+  src: url("./fonts/JetBrains_Mono/JetBrainsMono-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 100 900;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid green; */
+  outline: none;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+.main_app_container {
+  background:
+    /* Soft blue glow – top */
+    radial-gradient(
+      800px circle at 10% -10%,
+      rgba(7, 109, 210, 0.12),
+      transparent 40%
+    ),
+    /* Soft blue glow – bottom */
+    radial-gradient(
+        700px circle at 90% 110%,
+        rgba(7, 109, 210, 0.08),
+        transparent 45%
+      ),
+    /* Base background */
+    linear-gradient(180deg, #0b0e14 0%, #0d1220 50%, #0b0e14 100%);
+
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  user-select: none;
+  /* cursor: none; */
+  cursor:
+    url("./assets/cursor.svg") 7 7,
+    auto;
+  overflow-x: hidden;
+}
+
+button,
+input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+:root {
+  --background_color: #0b0e14; /* done */
+
+  --theme_color: #076dd2; /* done */
+
+  --card_color: #151921; /* done */
+  --card_colored_color: #172237; /* done */
+  --card_color_bright: #1a1f29; /* done */
+
+  --border_color: #ffffff0b; /* done */
+
+  --text_color: #f1f5f9; /* done */
+  --text_dimmed: #868e96; /* done */
+}
